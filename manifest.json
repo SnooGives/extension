@@ -1,0 +1,18 @@
+{
+"manifest_version": 2,
+    "name": "SnooGives",
+    "description": "An extension that converts your Reddit browsing into charitable donations!",
+    "version": "1.0",
+    "content_scripts": [
+        {
+            "matches": [
+                "*://reddit.com/r/aww/*"
+            ],
+            "js": [
+                "jquery-1.11.3.min.js",
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
